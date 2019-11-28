@@ -2,8 +2,9 @@
 export BERT_BASE_DIR=./bert_model/models/chinese_L-12_H-768_A-12
 export GLUE_DIR=./data
 export OUTPUT_DIR=./bert_model/output
+export CUDA_VISIBLE_DEVICES=0
 
-python classifier.py \
+python run_classifier.py \
   --task_name=similarity \
   --do_train=true \
   --do_eval=true \
