@@ -379,7 +379,7 @@ class SelfProcessor(DataProcessor):
 
     def get_train_examples(self, data_dir):
         '''training set.'''
-        file_path = os.path.join(data_dir, 'train_set.csv')
+        file_path = os.path.join(data_dir, 'train.csv')
         with open(file_path, 'r', encoding="utf-8") as f:
             reader = f.readlines()
         examples = []
